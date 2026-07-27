@@ -83,4 +83,4 @@ async def draw_lots(interaction: discord.Interaction):
     await interaction.response.send_message(f"🔮 {interaction.user.mention} 誠心跪求得一籤：\n📋 **{random.choice(lots)}**")
 
 token = os.environ.get("DISCORD_TOKEN")
-bot.run(token
+bot.run(token)
