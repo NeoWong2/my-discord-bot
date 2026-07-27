@@ -81,5 +81,5 @@ async def guess_number(interaction: discord.Interaction, 數字: int):
 async def draw_lots(interaction: discord.Interaction):
     lots = ["【大吉 🌟】運勢如日中天！", "【上吉 👍】平平安安超穩健！", "【下籤 🌧️】今天留在群組聊天取暖吧！"]
     await interaction.response.send_message(f"🔮 {interaction.user.mention} 誠心跪求得一籤：\n📋 **{random.choice(lots)}**")
-    token = "把你在第一步按按鈕複製的長串金鑰貼進來"
+    token = os.environ.get("DISCORD_TOKEN")
 bot.run(token)
